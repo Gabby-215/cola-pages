@@ -56,11 +56,11 @@ var cities = {
   dalian:     { name: "大连",                en: "Dalian",    country: "china", desc: "我本科四年所在的城市，也是真正意义上我摄影的起始地，是我离家之后第一个长居的城市，是我成年之后的第一个记忆方阵。" },
   guiyang:    { name: "贵阳",                en: "Guiyang",   country: "china", desc: "我的家乡，我回不去也离不开的家乡" },
   suzhou:     { name: "苏州",                en: "Suzhou",    country: "china", desc: "" },
-  durham:     { name: "Durham 杜伦",         en: "Durham",    country: "uk",    desc: "" },
-  york:       { name: "York 约克",           en: "York",      country: "uk",    desc: "" },
-  edinburgh:  { name: "Edinburgh 爱丁堡",    en: "Edinburgh", country: "uk",    desc: "" },
+  durham:     { name: "Durham",         en: "Durham",    country: "uk",    desc: "" },
+  york:       { name: "York",           en: "York",      country: "uk",    desc: "" },
+  edinburgh:  { name: "Edinburgh",    en: "Edinburgh", country: "uk",    desc: "" },
   stabbs:     { name: "St.Abbs",             en: "St.Abbs",   country: "uk",    desc: "" },
-  barcelona:  { name: "Barcelona 巴塞罗那",  en: "Barcelona", country: "spain", desc: "" },
+  barcelona:  { name: "Barcelona",  en: "Barcelona", country: "spain", desc: "" },
   misc:       { name: "",                    en: "",          country: "other", desc: "" }
 };
 
@@ -70,11 +70,11 @@ var cities = {
 var mapLocations = [
   { name: "大连",                lat: 38.914, lng: 121.614, page: "dalian" },
   { name: "贵阳",                lat: 26.647, lng: 106.630, page: "guiyang" },
-  { name: "Durham 杜伦",         lat: 54.776, lng: -1.574,  page: "durham" },
-  { name: "York 约克",           lat: 53.959, lng: -1.086,  page: "york" },
-  { name: "Edinburgh 爱丁堡",    lat: 55.953, lng: -3.188,  page: "edinburgh" },
+  { name: "Durham",         lat: 54.776, lng: -1.574,  page: "durham" },
+  { name: "York",           lat: 53.959, lng: -1.086,  page: "york" },
+  { name: "Edinburgh",    lat: 55.953, lng: -3.188,  page: "edinburgh" },
   { name: "St.Abbs",             lat: 55.910, lng: -2.092,  page: "stabbs" },
-  { name: "Barcelona 巴塞罗那",  lat: 41.385, lng: 2.173,   page: "barcelona" }
+  { name: "Barcelona",  lat: 41.385, lng: 2.173,   page: "barcelona" }
 ];
 
 // ========================================
