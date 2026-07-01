@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Under the shelter of Gabrielle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <!-- 大图浮层 -->
+  <div id="photoOverlay" class="photo-overlay" onclick="closePhoto()">
+    <div class="overlay-content" onclick="event.stopPropagation()">
+      <span class="overlay-close" onclick="closePhoto()">×</span>
+      <img id="overlayImg" src="" alt="">
+      <p id="overlayLoc" class="overlay-location"></p>
+      <p id="overlayDesc" class="overlay-desc"></p>
+    </div>
+  </div>
+
+  <!-- 首页 -->
+  <div class="cover" id="home">
+    <h1>Under The Shelter of Gabrielle</h1>
+    <p class="subtitle">Follow My Eyes</p>
+    <nav>
+      <a href="#" onclick="showPage('china')">中国</a>
+      <a href="#" onclick="showPage('uk')">英国</a>
+      <a href="#" onclick="showPage('spain')">西班牙</a>
+      <a href="#" onclick="showPage('italy')">意大利</a>
+      <a href="#" onclick="showPage('france')">法国</a>
+      <a href="#" onclick="showPage('other')">其他</a>
+      <a href="#" onclick="showPage('mapPage')">地图导航</a>
+    </nav>
+    <div class="photo-wall" id="homePhotoWall"></div>
+  </div>
+
+  <!-- 国家和城市页面由 script.js 自动生成，插在地图页面之前 -->
+
+  <!-- 地图导航 -->
+  <section id="mapPage" class="page map-page">
+    <a href="#" onclick="showPage('home')" class="map-back">← 返回</a>
+    <div class="map-title">地图导航</div>
+    <div class="map-frame">
+      <div id="mapContainer"></div>
+    </div>
+  </section>
+
+  <!-- 结尾 -->
+  <footer>
+    <p>Under the shelter of Gabrielle</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
