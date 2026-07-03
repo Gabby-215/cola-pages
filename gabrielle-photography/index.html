@@ -15,6 +15,8 @@
       <p id="overlayLoc" class="overlay-location"></p>
       <p id="overlayDesc" class="overlay-desc"></p>
     </div>
+    <div id="arrowLeft" class="overlay-arrow arrow-left" onclick="event.stopPropagation(); prevPhoto()" style="display:none;">‹</div>
+    <div id="arrowRight" class="overlay-arrow arrow-right" onclick="event.stopPropagation(); nextPhoto()" style="display:none;">›</div>
   </div>
 
   <!-- 首页 -->
@@ -37,7 +39,7 @@
 
   <!-- 地图导航 -->
   <section id="mapPage" class="page map-page">
-    <a href="#" onclick="showPage('home')" class="map-back">← 返回</a>
+    <a href="#" onclick="goBack()" class="map-back">← 返回</a>
     <div class="map-title">地图导航</div>
     <div class="map-frame">
       <div id="mapContainer"></div>
